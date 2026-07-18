@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Zytron Store</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins,sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#f4faff;
+color:#111;
+}
+
+header{
+
+position:fixed;
+top:0;
+width:100%;
+padding:18px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(255,255,255,.85);
+backdrop-filter:blur(12px);
+box-shadow:0 3px 15px rgba(0,0,0,.1);
+z-index:1000;
+
+}
+
+.logo{
+
+font-size:28px;
+font-weight:700;
+color:#007BFF;
+
+}
+
+.logo span{
+
+color:#111;
+
+}
+
+nav a{
+
+text-decoration:none;
+margin-left:30px;
+color:#222;
+font-weight:500;
+transition:.3s;
+
+}
+
+nav a:hover{
+
+color:#2196F3;
+
+}
+
+.hero{
+
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:30px;
+background:linear-gradient(135deg,#007BFF,#00BFFF);
+
+color:white;
+
+}
+
+.hero h1{
+
+font-size:60px;
+
+}
+
+.hero p{
+
+margin-top:20px;
+font-size:20px;
+
+}
+
+.hero button{
+
+margin-top:35px;
+padding:15px 35px;
+border:none;
+background:white;
+color:#007BFF;
+border-radius:40px;
+cursor:pointer;
+font-size:17px;
+font-weight:bold;
+transition:.3s;
+
+}
+
+.hero button:hover{
+
+transform:scale(1.08);
+
+}
+
+section{
+
+padding:90px 8%;
+
+}
+
+.titulo{
+
+text-align:center;
+font-size:35px;
+margin-bottom:50px;
+
+}
+
+.produtos{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px;
+
+}
+
+.card{
+
+background:white;
+border-radius:18px;
+overflow:hidden;
+box-shadow:0 10px 20px rgba(0,0,0,.08);
+transition:.4s;
+
+}
+
+.card:hover{
+
+transform:translateY(-8px);
+
+}
+
+.card img{
+
+width:100%;
+height:230px;
+object-fit:cover;
+
+}
+
+.info{
+
+padding:20px;
+
+}
+
+.info h3{
+
+margin-bottom:10px;
+
+}
+
+.preco{
+
+margin-top:15px;
+font-size:22px;
+font-weight:bold;
+color:#007BFF;
+
+}
+
+.antigo{
+
+text-decoration:line-through;
+color:#888;
+font-size:15px;
+
+}
+
+.desconto{
+
+display:inline-block;
+padding:5px 12px;
+background:#007BFF;
+color:white;
+border-radius:20px;
+font-size:13px;
+margin-bottom:12px;
+
+}
+
+.info button{
+
+margin-top:18px;
+width:100%;
+padding:12px;
+border:none;
+background:#111;
+color:white;
+border-radius:10px;
+cursor:pointer;
+transition:.3s;
+
+}
+
+.info button:hover{
+
+background:#007BFF;
+
+}
+
+.contato{
+
+background:#111;
+color:white;
+text-align:center;
+
+}
+
+.contato p{
+
+margin:15px 0;
+
+}
+
+footer{
+
+background:#000;
+color:white;
+text-align:center;
+padding:25px;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+Zytron <span>Store</span>
+</div>
+
+<nav>
+
+<a href="#">Início</a>
+<a href="#produtos">Produtos</a>
+<a href="#contato">Contato</a>
+
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div>
+
+<h1>Zytron Store</h1>
+
+<p>Tecnologia, qualidade e estilo em um só lugar.</p>
+
+<button onclick="document.getElementById('produtos').scrollIntoView()">
+Ver Produtos
+</button>
+
+</div>
+
+</section>
+
+<section id="produtos">
+
+<h2 class="titulo">
+Produtos em Oferta
+</h2>
+
+<div class="produtos">
+
+<div class="card">
+
+<img src="https://http2.mlstatic.com/D_NQ_NP_2X_894677-MLA95731285800_102025-F.webp" alt="">
+
+<div class="info">
+
+<span class="desconto">
+-32%
+</span>
+  
+<h3>Moto G35 5G Dual SIM 256 GB vermelho 8 GB RAM</h3>
+
+<p class="antigo">
+R$ 1.499,90
+</p>
+  
+<p class="preco">
+R$ 1.008
+</p>
+
+  <a href="https://meli.la/1YiYRqo" target="_blank">
+    <button>Comprar</button>
+</a>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://http2.mlstatic.com/D_NQ_NP_2X_667869-MLA99578013714_122025-F.webp">
+
+<div class="info">
+
+<span class="desconto">
+-28%
+</span>
+
+<h3>Mouse c/ fio Logitech M90 Preto</h3>
+
+<p class="antigo">
+R$ 39,90
+</p>
+
+<p class="preco">
+R$ 28,71
+</p>
+
+  <a href="https://meli.la/1k9K2Rs" target="_blank">
+    <button>Comprar</button>
+</a>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://http2.mlstatic.com/D_NQ_NP_2X_690900-MLB109586501530_042026-F.webp">
+
+<div class="info">
+
+<span class="desconto">
+-30%
+</span>
+
+<h3>Pipoqueira Elétrica Portátil Sem Óleo Fritura Ar Quente</h3>
+
+<p class="antigo">
+R$ 129,90
+</p>
+
+<p class="preco">
+R$ 89,90
+</p>
+
+  <a href="https://meli.la/24dEo2h" target="_blank">
+    <button>Comprar</button>
+</a>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://http2.mlstatic.com/D_NQ_NP_2X_842428-MLA109935853722_042026-F.webp">
+
+<div class="info">
+
+<span class="desconto">
+-20%
+</span>
+
+<h3>Guarda Roupa Tonielque Móveis GR Capri 2P/Esp Onix</h3>
+
+<p class="antigo">
+R$ 799
+</p>
+
+<p class="preco">
+R$ 636,31
+</p>
+
+  <a href="https://meli.la/1HXALyb" target="_blank">
+    <button>Comprar</button>
+</a>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://http2.mlstatic.com/D_NQ_NP_2X_987853-MLA109863820220_042026-F.webp">
+
+<div class="info">
+
+<span class="desconto">
+-36%
+</span>
+
+<h3>Kit Ferramentas 46 Peças Com Soquetes e Chaves Para Carro e Casa</h3>
+
+<p class="antigo">
+R$ 43,80
+</p>
+
+<p class="preco">
+R$ 27,90
+</p>
+
+  <a href="https://meli.la/2QAJsTf" target="_blank">
+    <button>Comprar</button>
+</a>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://http2.mlstatic.com/D_NQ_NP_2X_774328-MLB83148508306_032025-F-criado-mudor-p-cama-box-compacto-c-prateleira-max.webp">
+
+<div class="info">
+
+<span class="desconto">
+-59%
+</span>
+
+<h3>Criado Mudor P/ Cama Box Compacto C/ Prateleira Max</h3>
+
+<p class="antigo">
+R$ 159,90
+</p>
+
+<p class="preco">
+R$ 64,00
+</p>
+
+  <a href="https://meli.la/1zitqdo" target="_blank">
+    <button>Comprar</button>
+</a>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://http2.mlstatic.com/D_NQ_NP_2X_895122-MLA83364812545_032025-F.webp">
+
+<div class="info">
+
+<span class="desconto">
+-8%
+</span>
+
+<h3>Papa Bolinha Elétrico Sem Fio Removedor De Fiapos Tira Pelos</h3>
+
+<p class="antigo">
+R$ 34,97
+</p>
+
+<p class="preco">
+R$ 31,90
+</p>
+
+  <a href="https://meli.la/1JoRDrS" target="_blank">
+    <button>Comprar</button>
+</a>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://http2.mlstatic.com/D_NQ_NP_2X_656734-MLA112154661210_062026-F.webp">
+
+<div class="info">
+
+<span class="desconto">
+-44%
+</span>
+
+<h3>Estante Plastica Modular 5 Prateleiras Multiuso Organizadora Preta - Marianopole</h3>
+
+<p class="antigo">
+R$ 90
+</p>
+
+<p class="preco">
+R$ 50
+</p>
+
+  <a href="https://meli.la/2SLYFRV" target="_blank">
+    <button>Comprar</button>
+</a>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://http2.mlstatic.com/D_NQ_NP_2X_940280-MLA100083088033_122025-F.webp">
+
+<div class="info">
+
+
+<h3>Kit 3 Bandejas De Bambu Retangular Para Cozinha 20x10cm Peti Lyor Hire</h3>
+
+
+<p class="preco">
+R$ 27,10
+</p>
+
+  <a href="https://meli.la/1eQqwMA" target="_blank">
+    <button>Comprar</button>
+</a>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://http2.mlstatic.com/D_NQ_NP_2X_844515-MLA100074452081_122025-F.webp">
+
+<div class="info">
+
+<span class="desconto">
+-50%
+</span>
+
+<h3>Fita LED Neon Flexível 3528 120Led VLX 5 metros Mangueira Corte 2,5cm</h3>
+
+<p class="antigo">
+R$ 58,00
+</p>
+
+<p class="preco">
+R$ 29,00
+</p>
+
+  <a href="https://meli.la/1RCFAXP" target="_blank">
+    <button>Comprar</button>
+</a>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://http2.mlstatic.com/D_NQ_NP_2X_801615-MLB91630839367_092025-F.webp">
+
+<div class="info">
+
+<span class="desconto">
+-61%
+</span>
+
+<h3>85cm Escorredor De Louça Pratos Organizador De Pia Cozinha</h3>
+
+<p class="antigo">
+R$ 392,27
+</p>
+
+<p class="preco">
+R$ 152,79
+</p>
+
+  <a href="https://meli.la/18RB5ek" target="_blank">
+    <button>Comprar</button>
+</a>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://http2.mlstatic.com/D_NQ_NP_2X_814039-MLA105162946838_012026-F.webp">
+
+<div class="info">
+
+
+<h3>Xiaomi Redmi Note 15 Dual Sim 256gb 8gb Ram (global) Pre</h3>
+
+
+<p class="preco">
+R$ 1.369,00
+</p>
+
+  <a href="https://meli.la/1m1YEZN" target="_blank">
+    <button>Comprar</button>
+</a>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://http2.mlstatic.com/D_NQ_NP_2X_881674-MLA106260237067_012026-F.webp">
+
+<div class="info">
+
+<span class="desconto">
+-46%
+</span>
+
+<h3>Conjunto de panelas antiaderente 10 peças Coffee cappuccino Imperial</h3>
+
+<p class="antigo">
+R$ 331,42
+</p>
+
+<p class="preco">
+R$ 177,29
+</p>
+
+  <a href="https://meli.la/1VSHZSt" target="_blank">
+    <button>Comprar</button>
+</a>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://http2.mlstatic.com/D_NQ_NP_2X_674512-MLA79740141129_102024-F.webp">
+
+<div class="info">
+
+<span class="desconto">
+-43%
+</span>
+
+<h3></h3>
+<h3>Caixa De Som Amplificada Philco Pcx7200 Bluetooth-1350w</h3>
+
+<p class="antigo">
+R$ 1.199,00
+</p>
+
+<p class="preco">
+R$ 683,05
+</p>
+
+  <a href="https://meli.la/15gMjjC" target="_blank">
+    <button>Comprar</button>
+</a>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://http2.mlstatic.com/D_NQ_NP_2X_875689-MLA107805437119_022026-F.webp">
+
+<div class="info">
+
+<span class="desconto">
+-41%
+</span>
+
+<h3>Smart Tv 32 Philco Roku Tv Dolby Áudio Hdr10 P32crb</h3>
+
+<p class="antigo">
+R$ 1.499,00
+</p>
+
+<p class="preco">
+R$ 879,00
+</p>
+
+  <a href="https://meli.la/2X2vEzB" target="_blank">
+    <button>Comprar</button>
+</a>
+
+</div>
+  
+</div>
+
+</div>
+
+</section>
+
+<section class="contato" id="contato">
+
+<h2 class="titulo">
+Contato
+</h2>
+
+<p>📧 contato : Zytronempresatech@gmail.com </p>
+
+<p>📱 (11) 93376-6599 </p>
+
+<p>📍 São Paulo - Brasil</p>
+
+</section>
+
+<footer>
+
+© 2026 Zytron Store • Todos os direitos reservados.
+
+</footer>
+
+</body>
+
+</html>
